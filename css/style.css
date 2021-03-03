@@ -1,0 +1,144 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1206px;
+    margin: 0 auto;
+}
+
+
+.header-menu .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0;
+    align-items: center;
+}
+
+.header-left-menu,
+.header-right-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left-menu {
+    flex-basis: 45%;
+}
+
+.header-right-menu {
+    flex-basis: 25%;
+}
+
+.header-left-menu .logo {
+    width: 26px;
+    height: 26px;
+    background: #5E81FE;
+    border-radius: 50%;
+    margin-right: 73px;
+}
+
+.header-left-menu a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #697CA6;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px #e6e6e6;
+}
+
+.header-left-menu .active a,
+.header-left-menu a:hover {
+    color: #5E81FE;
+}
+
+.header-right-menu a:hover path{
+    fill: #6188FF;
+}
+
+.gs-button {
+    background: #D2E1FF;
+    padding: 13px 15px;
+    text-decoration: none;
+    color: #3A79FF;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.wrapper-1 {
+    background: url("../img/hero-image.png");
+    background-size: cover;
+    background-position-y: 70%;
+    text-align: center;
+    padding: 90px 0 20px;
+}
+
+.wrapper-1 .intro {
+    font-size: 10px;
+    font-weight: 500;
+    color: #3D4F9F;
+}
+
+.wrapper-1 h1 {
+    font-weight: 300;
+    font-size: 48px;
+    color: #3D4F9F;
+    margin: 16px 0 28px;
+}
+
+.wrapper-1 h1 span {
+    font-weight: 500;
+}
+
+.wrapper-1 p {
+    color: #8D96BD;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.wrapper-1 .play {
+    display: inline-block;
+    margin: 0 auto 180px;
+    padding: 25px;
+    background: white url("../img/icon/triangle.png") no-repeat calc(50% + 2px) 50%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+    transition: 0.5s linear;
+}
+
+.wrapper-1 .play:hover {
+    transition: 0.5s linear;
+    background: #6188FF url("../img/icon/triangle-white.svg") no-repeat calc(50% + 2px) 50%;
+    transform: rotate(360deg);
+}
+
+.slider-new {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slider-new div {
+    width: 8px;
+    height: 8px;
+    background: #8D96BD;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+.slider-new div:hover,
+.slider-new div.active {
+    background: #5E81FE;
+}
+
+.wrapper-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+.wrapper-2 path:hover {
+    fill: #5982E7;
+}
