@@ -143,13 +143,17 @@ body {
     background: #5E81FE;
 }
 
-.wrapper-2 {
+.wrapper-2 .container {
     display: flex;
     justify-content: space-around;
     padding: 60px 0;
 }
 
-.wrapper-2 path:hover {
+.wrapper-2 span {
+    display: inline-block;
+}
+
+.wrapper-2 span:hover path {
     fill: #5982E7;
 }
 
@@ -157,7 +161,7 @@ body {
     background: #F5F8FF;
 }
 
-.wrapper-2,
+.wrapper-2 .container,
 .wrapper-3-content {
     max-width: 888px;
     margin: 0 auto;
@@ -590,6 +594,30 @@ body {
     height: 189px;
 }
 
+.wrapper-7 .text-block p {
+    font-weight: 500;
+    font-size: 10px;
+    color: #3D4F9F;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.wrapper-7 h2 {
+    font-weight: 500;
+    font-size: 36px;
+    color: #3D4F9F;
+}
+
+.wrapper-7 .text-block p.text-block__title-text {
+    font-weight: 600;
+    font-size: 12px;
+    color: #A4ABC8;
+    letter-spacing: 0.03em;
+    line-height: 23px;
+}
+
+
+
 .wrapper-7 .card-block {
     flex-basis: 45%;
     position: relative;
@@ -600,9 +628,6 @@ body {
 }
 
 .wrapper-7 .card-block .cards-nav {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 70px);
     display: flex;
     align-self: center;
     justify-content: center;
@@ -612,8 +637,17 @@ body {
     margin-right: 12px;
 }
 
+.wrapper-7 .card-block .cards-nav div:hover {
+    background: #7093db;
+}
+
 .wrapper-7 .card-block .cards-nav div.active {
-   background: #3A79FF;
+    background: #3A79FF;
+}
+
+.cards-wrapper-helper {
+    position: relative;
+    min-height: 261px;
 }
 
 .wrapper-7 .card-block .cards-wrapper {
@@ -642,6 +676,8 @@ body {
     font-size: 14px;
     color: #676F95;
     max-width: 283px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 .wrapper-7 .card-block .cards-wrapper .card-item img {
@@ -657,3 +693,336 @@ body {
     background: #D1D6E3;
 }
 
+.wrapper-8 {
+    padding: 175px 0;
+}
+
+.wrapper-8 .container {
+    width: 743px;
+    margin: 0 auto;
+}
+
+.wrapper-8__title {
+    text-align: center;
+    color: #3D4F9F;
+}
+
+.wrapper-8__title p {
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.wrapper-8__title h2 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.questions .question-item {
+    border-bottom: 1px solid #D8E3FE;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.questions .question-item .answer {
+    display: none;
+    transition: 2s;
+}
+
+.questions .question-item p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #8E96B7;
+}
+
+.questions .question-item .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #8E96B7;
+    border-right: 3px solid #8E96B7;
+    margin-right: 24px;
+    transform: rotate(-45deg);
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.questions .question-item:hover .answer,
+.questions .question-item.active .answer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto 53px 80px;
+    align-items: center;
+}
+
+.questions .question-item:hover .answer p,
+.questions .question-item.active .answer p {
+    flex-basis: 70%;
+    color: #8D96BD;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.questions .question-item:hover .arrow,
+.questions .question-item.active .arrow {
+    transform: rotate(135deg);
+    border-color: #495274;
+    margin-bottom: 0;
+}
+
+.questions .question-item:hover p,
+.questions .question-item.active p {
+    color: #495274;
+}
+
+.questions .question-item:hover a {
+    text-decoration: none;
+    color: #7382A3;
+    padding: 13px 15px;
+    background: #E8ECF4;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.wrapper-9 {
+    background: url("../img/get-started-bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 91px 0;
+}
+
+.wrapper-9 .container {
+    width: 712px;
+    margin: 0 auto;
+}
+
+.wrapper-9 .container > span {
+    display: block;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.wrapper-9 .container h2 {
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 16px 0 28px;
+}
+
+.wrapper-9 .container h2 span {
+    display: inline;
+    font-weight: 500;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.wrapper-9 .container p {
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+.wrapper-9 .vr-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-9 .vr-buttons .view-button {
+    padding: 13px 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px #6480E8;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #565F82;
+    text-decoration: none;
+}
+
+.wrapper-9 .vr-buttons .view-button:hover {
+    background: #f3dd77;
+    border: 1px solid red;
+}
+
+.wrapper-9 .vr-buttons .read-button {
+    padding: 13px 9px;
+    border: 1px solid #A0B4FF;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #C7D3FF;
+    text-decoration: none;
+}
+
+.wrapper-9 .vr-buttons .read-button:hover {
+    border: 1px solid red;
+    background: #83cf47;
+    color: black;
+}
+
+.wrapper-10 {
+    padding: 118px 0;
+    border-bottom: 1px solid #8E96B7;
+}
+
+.wrapper-10 .container {
+    width: 887px;
+    margin: 0 auto;
+}
+
+.wrapper-10 .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-10 .newsletter-title {
+    flex-basis: 40%;
+    margin-right: 80px;
+}
+
+.wrapper-10 .newsletter-email {
+    flex-basis: 50%;
+}
+
+.wrapper-10 .newsletter-title .sign-news {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3D4F9F;
+}
+
+.wrapper-10 .newsletter-title .sign-news-text {
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+}
+
+.wrapper-10 .newsletter-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-10 .newsletter-email input {
+    width: 88px;
+    margin-right: 14px;
+    background: #EFEFF7;
+    border-radius: 5px;
+    padding: 21px 168px 21px 23px;
+}
+
+.wrapper-10 .newsletter-email a {
+    width: 60px;
+    padding: 22px 62px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #FFFFFF;
+    background: #4D6CE1;
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.wrapper-10 .newsletter-email a:hover {
+    background: white;
+    color: #4D6CE1;
+    border: 1px solid #4D6CE1;
+}
+
+.footer-menu {
+    padding: 93px 0;
+}
+
+.footer-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.footer-left-menu,
+.footer-right-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left-menu {
+    flex-basis: 45%;
+}
+
+.footer-right-menu {
+    flex-basis: 25%;
+}
+
+.footer-left-menu .logo {
+    width: 26px;
+    height: 26px;
+    background: #5E81FE;
+    border-radius: 50%;
+    margin-right: 73px;
+}
+
+.footer-left-menu a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #697CA6;
+    font-weight: 500;
+    text-shadow: 0 0 5px #e6e6e6;
+}
+
+.footer-left-menu .active a,
+.footer-left-menu a:hover {
+    color: #5E81FE;
+}
+
+.footer-right-menu a:hover path {
+    fill: #6188FF;
+}
+
+.gs-button {
+    background: #D2E1FF;
+    padding: 13px 15px;
+    text-decoration: none;
+    color: #3A79FF;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.gs-button:hover {
+    background: black;
+    color: red;
+    border: 1px solid #3A79FF;
+}
+
+.footer-signature {
+    width: 925px;
+    margin: 0 auto;
+}
+
+.footer-menu .sign {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #AEB8D0;
+}
